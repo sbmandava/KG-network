@@ -1,0 +1,64 @@
+[
+  {
+    "kind": "sdwan",
+    "version": "v1alpha",
+    "namespace": "238",
+    "name": "gtwy-dal3-238",
+    "metadata": {
+      "dateCreated": 1731484464088,
+      "dateUpdated": 1731484465088,
+      "labels": {
+        "network": "coporate",
+        "type": "gateway"
+      }
+    },
+    "spec": {
+      "type": "gateway",
+      "slid": "2096796-11669615",
+      "size": "SP-50",
+      "speed": "25m",
+      "edgeSelector": {
+        "edgeRef": {
+          "kind": "edge",
+          "version": "v1alpha",
+          "namespace": "lla",
+          "name": "dal3"
+        }
+      },
+      "vendor": {
+        "name": "aruba"
+      }
+    }
+  },
+  {
+    "kind": "sdwan",
+    "version": "v1alpha",
+    "namespace": "238",
+    "name": "gtwy-stk1-238",
+    "metadata": {
+      "dateCreated": 1731484464088,
+      "dateUpdated": 1731484465088,
+      "labels": {
+        "network": "coporate",
+        "type": "gateway"
+      }
+    },
+    "spec": {
+      "type": "gateway",
+      "slid": "2096796-11669615",
+      "size": "SP-50",
+      "speed": "25m",
+      "edgeSelector": {
+        "edgeRef": {
+          "kind": "edge",
+          "version": "v1alpha",
+          "namespace": "lla",
+          "name": "stk1"
+        }
+      },
+      "vendor": {
+        "name": "aruba"
+      }
+    }
+  }
+]
