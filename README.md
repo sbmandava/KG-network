@@ -35,8 +35,9 @@ In your ollama chat session.
 
 ### Sample questions 
 * Share me site and namespace details
-* Share me specific details of namespace <id>
-* Share me VLAN, VNF, Access, IPAMblock, Firewalls associated with namespace <id>
+* Share me specific details of namespace namespace_id
+* Share me VLAN, VNF, Access, IPAMblock, Firewalls associated with namespace namespace_id
+* Can you share IP address associated with firewall_X (from the above result)
 
 ### System prompt.
 Fine Tune the system prompt for better results.
