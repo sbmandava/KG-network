@@ -2,18 +2,18 @@
   {
     "kind": "orchestrator",
     "version": "v1alpha",
-    "namespace": "268",
-    "name": "paloalto-268",
+    "namespace": "209",
+    "name": "paloalto-209",
     "metadata": {
-      "dateCreated": 1731502110228,
-      "dateUpdated": 1731502111228,
+      "dateCreated": 1731507002046,
+      "dateUpdated": 1731507003046,
       "labels": {
         "network": "coporate"
       }
     },
     "spec": {
       "slid": "2096796-11669614",
-      "hostname": "paloalto-268",
+      "hostname": "paloalto-209",
       "siteRef": {
         "kind": "site",
         "version": "v1alpha",
@@ -28,18 +28,18 @@
   {
     "kind": "orchestrator",
     "version": "v1alpha",
-    "namespace": "268",
-    "name": "aruba-268",
+    "namespace": "209",
+    "name": "aruba-209",
     "metadata": {
-      "dateCreated": 1731502110228,
-      "dateUpdated": 1731502111228,
+      "dateCreated": 1731507002046,
+      "dateUpdated": 1731507003046,
       "labels": {
         "network": "coporate"
       }
     },
     "spec": {
       "slid": "2096796-11669614",
-      "hostname": "aruba-268",
+      "hostname": "aruba-209",
       "siteRef": {
         "kind": "site",
         "version": "v1alpha",

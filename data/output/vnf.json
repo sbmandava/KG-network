@@ -2,11 +2,11 @@
   {
     "kind": "vnf",
     "version": "v1alpha",
-    "namespace": "268",
+    "namespace": "209",
     "name": "dal3-paloalto",
     "metadata": {
-      "dateCreated": 1731502110228,
-      "dateUpdated": 1731502111228,
+      "dateCreated": 1731507002046,
+      "dateUpdated": 1731507003046,
       "labels": {}
     },
     "spec": {
@@ -16,8 +16,8 @@
       "firewallRef": {
         "kind": "firewall",
         "version": "v1alpha",
-        "namespace": "268",
-        "name": "gtwy-dal3-268"
+        "namespace": "209",
+        "name": "gtwy-dal3-209"
       },
       "edgeRef": {
         "kind": "edge",
@@ -28,7 +28,7 @@
       "licenseRef": {
         "kind": "license",
         "version": "v1alpha",
-        "namespace": "268",
+        "namespace": "209",
         "name": "dal3-paloalto"
       },
       "vendor": {
@@ -39,11 +39,11 @@
   {
     "kind": "vnf",
     "version": "v1alpha",
-    "namespace": "268",
+    "namespace": "209",
     "name": "dal3-aruba",
     "metadata": {
-      "dateCreated": 1731502110228,
-      "dateUpdated": 1731502111228,
+      "dateCreated": 1731507002046,
+      "dateUpdated": 1731507003046,
       "labels": {}
     },
     "spec": {
@@ -53,8 +53,8 @@
       "sdwanRef": {
         "kind": "sdwan",
         "version": "v1alpha",
-        "namespace": "268",
-        "name": "gtwy-dal3-268"
+        "namespace": "209",
+        "name": "gtwy-dal3-209"
       },
       "edgeRef": {
         "kind": "edge",
@@ -65,7 +65,7 @@
       "licenseRef": {
         "kind": "license",
         "version": "v1alpha",
-        "namespace": "268",
+        "namespace": "209",
         "name": "dal3-aruba"
       },
       "vendor": {
@@ -76,11 +76,11 @@
   {
     "kind": "vnf",
     "version": "v1alpha",
-    "namespace": "268",
+    "namespace": "209",
     "name": "stk1-paloalto",
     "metadata": {
-      "dateCreated": 1731502110228,
-      "dateUpdated": 1731502111228,
+      "dateCreated": 1731507002046,
+      "dateUpdated": 1731507003046,
       "labels": {}
     },
     "spec": {
@@ -90,8 +90,8 @@
       "firewallRef": {
         "kind": "firewall",
         "version": "v1alpha",
-        "namespace": "268",
-        "name": "gtwy-stk1-268"
+        "namespace": "209",
+        "name": "gtwy-stk1-209"
       },
       "edgeRef": {
         "kind": "edge",
@@ -102,7 +102,7 @@
       "licenseRef": {
         "kind": "license",
         "version": "v1alpha",
-        "namespace": "268",
+        "namespace": "209",
         "name": "stk1-paloalto"
       },
       "vendor": {
@@ -113,11 +113,11 @@
   {
     "kind": "vnf",
     "version": "v1alpha",
-    "namespace": "268",
+    "namespace": "209",
     "name": "stk1-aruba",
     "metadata": {
-      "dateCreated": 1731502110228,
-      "dateUpdated": 1731502111228,
+      "dateCreated": 1731507002046,
+      "dateUpdated": 1731507003046,
       "labels": {}
     },
     "spec": {
@@ -127,8 +127,8 @@
       "sdwanRef": {
         "kind": "sdwan",
         "version": "v1alpha",
-        "namespace": "268",
-        "name": "gtwy-stk1-268"
+        "namespace": "209",
+        "name": "gtwy-stk1-209"
       },
       "edgeRef": {
         "kind": "edge",
@@ -139,7 +139,7 @@
       "licenseRef": {
         "kind": "license",
         "version": "v1alpha",
-        "namespace": "268",
+        "namespace": "209",
         "name": "stk1-aruba"
       },
       "vendor": {
