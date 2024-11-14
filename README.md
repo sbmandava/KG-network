@@ -46,5 +46,5 @@ Ollama : llama3.2:3b
 ### Development in Progress. 
 * Building docker-compose for portability
 * exposing relationships.html on a web endpoint
-* exposing vector_context.jsonl and llm prompt as API
+* exposing NLP chat interface which automates the ingestion and prompting and expose it as streaming API
  
