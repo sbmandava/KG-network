@@ -5,7 +5,7 @@ Mock Knowledge Graph Generator for NLP Conversations.
 ### Rest Endpoint
 ```
 python src/api_wrapper.py 
-``
+```
 open browser http://<ip_address>/docs/
 
 ### Manual steps
