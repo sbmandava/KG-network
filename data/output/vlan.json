@@ -1,0 +1,178 @@
+[
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-paloalto-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "caa70811-b29f-454b-b833-7a935c5ea222",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "dal3-paloalto-wan1"
+      }
+    }
+  },
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-paloalto-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "6fb8d052-5c97-4558-b9db-83ac6748cd24",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "dal3-paloalto-lan1"
+      }
+    }
+  },
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-aruba-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "4fa6ab34-4ed1-4b6d-bdfe-ef8d5241ddaf",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "dal3-aruba-wan1"
+      }
+    }
+  },
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-aruba-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "bb9c3532-0952-4a22-a486-d566e9656828",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "dal3-aruba-lan1"
+      }
+    }
+  },
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-paloalto-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "9a502f40-9d0b-4f1a-a99d-66ce0929032d",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "stk1-paloalto-wan1"
+      }
+    }
+  },
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-paloalto-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "c2d03c5a-c985-4404-b201-481c7e629289",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "stk1-paloalto-lan1"
+      }
+    }
+  },
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-aruba-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "339911c1-b111-4cd8-90fb-7e28138884fe",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "stk1-aruba-wan1"
+      }
+    }
+  },
+  {
+    "kind": "vlan",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-aruba-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "uuid": "937c438f-aa92-4bde-a375-915bb082fcf5",
+      "type": "VPOP-MPLS",
+      "vlanId": 1370,
+      "accessRef": {
+        "kind": "access",
+        "version": "v1alpha",
+        "namespace": "268",
+        "name": "stk1-aruba-lan1"
+      }
+    }
+  }
+]

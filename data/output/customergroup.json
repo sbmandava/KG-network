@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "customergroup",
+    "version": "v1alpha",
+    "namespace": "cg-93",
+    "name": "cg-93",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {
+        "source": "cmd",
+        "cmd-id": "93",
+        "net-lla-naas-aruba-api-classifier": "cmd-backfill"
+      }
+    },
+    "spec": {
+      "name": "Mock Company",
+      "accountRefs": [
+        {
+          "kind": "account",
+          "version": "v1alpha",
+          "namespace": "268",
+          "name": "268"
+        }
+      ]
+    }
+  }
+]

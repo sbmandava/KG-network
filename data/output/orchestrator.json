@@ -1,0 +1,54 @@
+[
+  {
+    "kind": "orchestrator",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "paloalto-268",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {
+        "network": "coporate"
+      }
+    },
+    "spec": {
+      "slid": "2096796-11669614",
+      "hostname": "paloalto-268",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "vendor": {
+        "name": "paloalto"
+      }
+    }
+  },
+  {
+    "kind": "orchestrator",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "aruba-268",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {
+        "network": "coporate"
+      }
+    },
+    "spec": {
+      "slid": "2096796-11669614",
+      "hostname": "aruba-268",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "vendor": {
+        "name": "aruba"
+      }
+    }
+  }
+]

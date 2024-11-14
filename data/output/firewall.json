@@ -1,0 +1,64 @@
+[
+  {
+    "kind": "firewall",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "gtwy-dal3-268",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {
+        "network": "coporate",
+        "type": "sse"
+      }
+    },
+    "spec": {
+      "type": "sse",
+      "slid": "2096796-11669615",
+      "size": "Palo-50_PREM-BASIC-YU",
+      "speed": "25m",
+      "edgeSelector": {
+        "edgeRef": {
+          "kind": "edge",
+          "version": "v1alpha",
+          "namespace": "lla",
+          "name": "dal3"
+        }
+      },
+      "vendor": {
+        "name": "paloalto"
+      }
+    }
+  },
+  {
+    "kind": "firewall",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "gtwy-stk1-268",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {
+        "network": "coporate",
+        "type": "sse"
+      }
+    },
+    "spec": {
+      "type": "sse",
+      "slid": "2096796-11669615",
+      "size": "Palo-50_PREM-BASIC-YU",
+      "speed": "25m",
+      "edgeSelector": {
+        "edgeRef": {
+          "kind": "edge",
+          "version": "v1alpha",
+          "namespace": "lla",
+          "name": "stk1"
+        }
+      },
+      "vendor": {
+        "name": "paloalto"
+      }
+    }
+  }
+]

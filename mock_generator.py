@@ -6,7 +6,7 @@ import uuid
 
 class MockDataGenerator:
     def __init__(self):
-        self.output_dir = "output"
+        self.output_dir = "data/output"
         self.base_timestamp = int((datetime.now() - timedelta(days=1)).timestamp() * 1000)
         self.namespace = str(random.randint(200, 300))
         self.sites = ["dal3", "stk1"]

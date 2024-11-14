@@ -1,0 +1,202 @@
+[
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-paloalto-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.240/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  },
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-paloalto-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.248/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  },
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-aruba-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.256/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  },
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "dal3-aruba-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.264/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  },
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-paloalto-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.272/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  },
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-paloalto-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.280/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  },
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-aruba-wan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.288/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  },
+  {
+    "kind": "ipamblock",
+    "version": "v1alpha",
+    "namespace": "268",
+    "name": "stk1-aruba-lan1",
+    "metadata": {
+      "dateCreated": 1731502110228,
+      "dateUpdated": 1731502111228,
+      "labels": {}
+    },
+    "spec": {
+      "prefix": 29,
+      "cidr": "70.66.58.296/29",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "type": "IPv4",
+      "slid": "2096796-11669615",
+      "allocationType": "MPLS",
+      "pool": "MPLS WAN"
+    }
+  }
+]

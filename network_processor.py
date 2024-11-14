@@ -13,11 +13,11 @@ from typing import Dict, List, Any, Tuple
 
 class NetworkDataProcessor:
     def __init__(self):
-        self.input_dir = "output"
-        self.output_dir = "output"
+        self.input_dir = "data/output"
+        self.output_dir = "data/output"
         self.g = Graph()
-        self.gtt = Namespace("http://gtt.com/ontology#")
-        self.g.bind("gtt", self.gtt)
+        self.lla = Namespace("http://lla.com/ontology#")
+        self.g.bind("lla", self.lla)
         self.relationships = []
         self.vector_contexts = []
         
@@ -35,7 +35,7 @@ class NetworkDataProcessor:
 
     def create_uri(self, kind: str, namespace: str, name: str) -> URIRef:
         """Create URI for resource"""
-        return URIRef(f"{self.gtt}{kind}_{namespace}_{name}")
+        return URIRef(f"{self.lla}{kind}_{namespace}_{name}")
 
     def generate_relationship_text(self, rel: Dict) -> str:
         """Generate human-readable text for relationship"""
@@ -80,7 +80,7 @@ class NetworkDataProcessor:
         """Add reference relationship to graph and tracking"""
         if isinstance(ref_data, dict) and all(k in ref_data for k in ['kind', 'namespace', 'name']):
             obj_uri = self.create_uri(ref_data['kind'], ref_data['namespace'], ref_data['name'])
-            self.g.add((subject_uri, self.gtt[ref_field], obj_uri))
+            self.g.add((subject_uri, self.lla[ref_field], obj_uri))
             
             relationship = {
                 'from': str(subject_uri).split('#')[1],
@@ -136,7 +136,7 @@ class NetworkDataProcessor:
             for resource in data:
                 if all(k in resource for k in ['kind', 'namespace', 'name']):
                     resource_uri = self.create_uri(resource['kind'], resource['namespace'], resource['name'])
-                    self.g.add((resource_uri, RDF.type, self.gtt[resource['kind']]))
+                    self.g.add((resource_uri, RDF.type, self.lla[resource['kind']]))
                     
                     if 'spec' in resource:
                         self.process_spec(resource_uri, resource['spec'], resource)
@@ -313,7 +313,7 @@ def main():
         print("Generating visualization...")
         processor.generate_html_visualization()
         
-        print("\nGenerated files in 'output' directory:")
+        print("\nGenerated files in 'data/output' directory:")
         print("- ontology.ttl (RDF ontology file)")
         print("- relationships.html (Interactive visualization)")
         print("- vector_contexts.jsonl (Vector store ingestion file)")
