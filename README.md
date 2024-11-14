@@ -2,10 +2,13 @@
 
 Mock Knowledge Graph Generator for NLP Conversations.
 
-### to invoke API for rest calls.
+### Rest Endpoint
+```
 python src/api_wrapper.py 
+``
+open browser http://<ip_address>/docs/
 
-### ---- Manual steps---
+### Manual steps
 To run mock generator manually
 ```
 python src/mock_generator.py
