@@ -22,11 +22,22 @@ python src/network_processor.py
 Open data/output/relationships.html in browser to see relationship
 
 
-### NLP Ingestion
-NLP ingestable relationship is store in  data/output/vector_contexts.jsonl
+### NLP Ingestion and response
+In your ollama chat session.
+
+* Set you model to llama3.2:3b
+
+* Upload the following 2 files.
+  -  data/output/vector_ingestion.json
+  -  data/output/ontology.ttl
+
+* Set your system prompt to content in prompt.md
+
+### Sample questions 
+* Share me site and namespace details
 
 ### System prompt.
-Use the sample prompt.md content for better formatted results. Tune them as required.
+Fine Tune the system prompt for better results.
 
 ### Models Tested.
 Ollama : llama3.2:3b
