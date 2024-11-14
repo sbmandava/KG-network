@@ -1,0 +1,48 @@
+[
+  {
+    "kind": "edge",
+    "version": "v1alpha",
+    "namespace": "lla",
+    "name": "dal3",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "network": "core",
+        "type": "vpop"
+      }
+    },
+    "spec": {
+      "type": "vpop",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      }
+    }
+  },
+  {
+    "kind": "edge",
+    "version": "v1alpha",
+    "namespace": "lla",
+    "name": "stk1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "network": "core",
+        "type": "vpop"
+      }
+    },
+    "spec": {
+      "type": "vpop",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      }
+    }
+  }
+]

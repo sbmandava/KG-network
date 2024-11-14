@@ -1,0 +1,666 @@
+[
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "dal3-paloalto-wan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "fd6c5e9f-7b78-4f56-966b-9ab98d14f5e4"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-paloalto"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-paloalto-wan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-paloalto-wan1"
+      },
+      "ipV4": "70.66.58.246",
+      "ipV4Gateway": "70.66.58.241",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-dal3",
+        "routerFqdn": "cr6-dal3.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "1950 N Stemmons Fwy",
+        "city": "Dallas",
+        "state": "Texas",
+        "zipcode": "75207",
+        "country": "USA",
+        "latitude": 32.80139,
+        "longitude": -96.819534,
+        "glid": "US8645R52J+F5FBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30190,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  },
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "dal3-paloalto-lan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "73d1d91e-0232-49ae-ba95-84023c26b72f"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-paloalto"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-paloalto-lan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-paloalto-lan1"
+      },
+      "ipV4": "70.66.58.254",
+      "ipV4Gateway": "70.66.58.249",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-dal3",
+        "routerFqdn": "cr6-dal3.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "1950 N Stemmons Fwy",
+        "city": "Dallas",
+        "state": "Texas",
+        "zipcode": "75207",
+        "country": "USA",
+        "latitude": 32.80139,
+        "longitude": -96.819534,
+        "glid": "US8645R52J+F5FBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30133,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  },
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "dal3-aruba-wan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "63ef6571-0b9d-47bc-a170-13e02e6e4c67"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-aruba"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-aruba-wan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-aruba-wan1"
+      },
+      "ipV4": "70.66.58.262",
+      "ipV4Gateway": "70.66.58.257",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-dal3",
+        "routerFqdn": "cr6-dal3.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "1950 N Stemmons Fwy",
+        "city": "Dallas",
+        "state": "Texas",
+        "zipcode": "75207",
+        "country": "USA",
+        "latitude": 32.80139,
+        "longitude": -96.819534,
+        "glid": "US8645R52J+F5FBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30170,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  },
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "dal3-aruba-lan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "5a90430f-d218-45ed-b786-0a133c321e4f"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-aruba"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-aruba-lan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "dal3-aruba-lan1"
+      },
+      "ipV4": "70.66.58.270",
+      "ipV4Gateway": "70.66.58.265",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-dal3",
+        "routerFqdn": "cr6-dal3.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "1950 N Stemmons Fwy",
+        "city": "Dallas",
+        "state": "Texas",
+        "zipcode": "75207",
+        "country": "USA",
+        "latitude": 32.80139,
+        "longitude": -96.819534,
+        "glid": "US8645R52J+F5FBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30124,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  },
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "stk1-paloalto-wan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "30707dfd-a6da-4dcd-8122-af7c2ca4fc64"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-paloalto"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-paloalto-wan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-paloalto-wan1"
+      },
+      "ipV4": "70.66.58.278",
+      "ipV4Gateway": "70.66.58.273",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-stk1",
+        "routerFqdn": "cr6-stk1.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "11 Esbogatan",
+        "city": "Kista",
+        "state": "Stockholms l\u00e4n",
+        "zipcode": "164 74",
+        "country": "SE",
+        "latitude": 59.422306,
+        "longitude": 17.918524,
+        "glid": "SE9FFVCWC8+RJHBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30158,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  },
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "stk1-paloalto-lan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "7df48fee-4467-4e43-b5ca-81e18c956ea9"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-paloalto"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-paloalto-lan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-paloalto-lan1"
+      },
+      "ipV4": "70.66.58.286",
+      "ipV4Gateway": "70.66.58.281",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-stk1",
+        "routerFqdn": "cr6-stk1.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "11 Esbogatan",
+        "city": "Kista",
+        "state": "Stockholms l\u00e4n",
+        "zipcode": "164 74",
+        "country": "SE",
+        "latitude": 59.422306,
+        "longitude": 17.918524,
+        "glid": "SE9FFVCWC8+RJHBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30122,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  },
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "stk1-aruba-wan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "5f791c6e-ea97-4cdb-b80d-59d6d1cffcc9"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-aruba"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-aruba-wan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-aruba-wan1"
+      },
+      "ipV4": "70.66.58.294",
+      "ipV4Gateway": "70.66.58.289",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-stk1",
+        "routerFqdn": "cr6-stk1.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "11 Esbogatan",
+        "city": "Kista",
+        "state": "Stockholms l\u00e4n",
+        "zipcode": "164 74",
+        "country": "SE",
+        "latitude": 59.422306,
+        "longitude": 17.918524,
+        "glid": "SE9FFVCWC8+RJHBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30148,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  },
+  {
+    "kind": "access",
+    "version": "v1alpha",
+    "namespace": "261",
+    "name": "stk1-aruba-lan1",
+    "metadata": {
+      "dateCreated": 1731482547398,
+      "dateUpdated": 1731482548398,
+      "labels": {
+        "workflow-id": "bf60e5ab-8672-4cee-90b8-ff24a004ab40"
+      }
+    },
+    "spec": {
+      "type": "VPOP-MPLS",
+      "siteRef": {
+        "kind": "site",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "vnfRef": {
+        "kind": "vnf",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-aruba"
+      },
+      "ipamBlockRef": {
+        "kind": "ipamblock",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-aruba-lan1"
+      },
+      "vlanRef": {
+        "kind": "vlan",
+        "version": "v1alpha",
+        "namespace": "261",
+        "name": "stk1-aruba-lan1"
+      },
+      "ipV4": "70.66.58.302",
+      "ipV4Gateway": "70.66.58.297",
+      "ipV4Prefix": 29,
+      "router": {
+        "router": "cr6-stk1",
+        "routerFqdn": "cr6-stk1.ip4.lla.net",
+        "primary": true,
+        "group": 192,
+        "asn": 3257,
+        "inheritGroup": 193,
+        "inheritIntf": "ae11.10",
+        "interface": "ae11"
+      },
+      "address": {
+        "line1": "11 Esbogatan",
+        "city": "Kista",
+        "state": "Stockholms l\u00e4n",
+        "zipcode": "164 74",
+        "country": "SE",
+        "latitude": 59.422306,
+        "longitude": 17.918524,
+        "glid": "SE9FFVCWC8+RJHBS00",
+        "line2": null
+      },
+      "slid": "2096796-11669615",
+      "vlanId": 1370,
+      "vrfId": 30116,
+      "speed": "25m",
+      "status": [
+        {
+          "phase": "provision",
+          "description": "Provision MPLS access.",
+          "status": "completed",
+          "startDate": 1731482548398,
+          "endDate": 1731482549398
+        }
+      ]
+    }
+  }
+]
