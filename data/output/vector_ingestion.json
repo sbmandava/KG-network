@@ -1,0 +1,2312 @@
+{
+  "metadata": {
+    "generated_at": "2024-11-14T10:39:06.806848",
+    "total_documents": 121,
+    "document_types": [
+      "relationship",
+      "resource"
+    ],
+    "version": "1.0"
+  },
+  "documents": [
+    {
+      "id": "rel_vnf_258_dal3-paloalto_firewall_258_gtwy-dal3-258",
+      "type": "relationship",
+      "content": "The vnf resource 'dal3-paloalto' in namespace '258' has a firewallRef relationship with the firewall resource 'gtwy-dal3-258' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "firewallRef",
+        "source_resource": {
+          "resource_id": "vnf_258_dal3-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-paloalto"
+        },
+        "target_resource": {
+          "resource_id": "firewall_258_gtwy-dal3-258",
+          "kind": "firewall",
+          "namespace": "258",
+          "name": "gtwy-dal3-258"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_dal3-paloalto",
+        "target_uri": "http://lla.com/ontology#firewall_258_gtwy-dal3-258",
+        "timestamp": "2024-11-14T10:39:06.800575"
+      }
+    },
+    {
+      "id": "vnf_258_dal3-paloalto",
+      "type": "resource",
+      "content": "Resource Description:\nType: vnf\nName: dal3-paloalto\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\ntype:sse\nslid:2096796-11669615\nspeed:25m\nfirewallRef:\n  kind: firewall\n  version: v1alpha\n  namespace: 258\n  name: gtwy-dal3-258\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: dal3\nlicenseRef:\n  kind: license\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto\nvendor:\n  name: paloalto\n\nResource Relationships:\n- Has firewallRef relationship with firewall_258_gtwy-dal3-258\n- Has edgeRef relationship with edge_lla_dal3\n- Has licenseRef relationship with license_258_dal3-paloalto\n- Is vnfRef of access_258_dal3-paloalto-wan1\n- Is vnfRef of access_258_dal3-paloalto-lan1",
+      "metadata": {
+        "resource_type": "vnf",
+        "namespace": "258",
+        "name": "dal3-paloalto",
+        "uri": "http://lla.com/ontology#vnf_258_dal3-paloalto",
+        "timestamp": "2024-11-14T10:39:06.800938"
+      }
+    },
+    {
+      "id": "firewall_258_gtwy-dal3-258",
+      "type": "resource",
+      "content": "Resource Description:\nType: firewall\nName: gtwy-dal3-258\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: coporate\n  type: sse\n\nResource Specification:\ntype:sse\nslid:2096796-11669615\nsize:Palo-50_PREM-BASIC-YU\nspeed:25m\nedgeSelector:\n  edgeRef: \n    kind: edge\n    version: v1alpha\n    namespace: lla\n    name: dal3\nvendor:\n  name: paloalto\n\nResource Relationships:\n- Is firewallRef of vnf_258_dal3-paloalto\n- Has edgeSelector_edgeRef relationship with edge_lla_dal3",
+      "metadata": {
+        "resource_type": "firewall",
+        "namespace": "258",
+        "name": "gtwy-dal3-258",
+        "uri": "http://lla.com/ontology#firewall_258_gtwy-dal3-258",
+        "timestamp": "2024-11-14T10:39:06.801445"
+      }
+    },
+    {
+      "id": "rel_vnf_258_dal3-paloalto_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The vnf resource 'dal3-paloalto' in namespace '258' has a edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "vnf_258_dal3-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-paloalto"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_dal3-paloalto",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.801455"
+      }
+    },
+    {
+      "id": "edge_lla_dal3",
+      "type": "resource",
+      "content": "Resource Description:\nType: edge\nName: dal3\nNamespace: lla\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: core\n  type: vpop\n\nResource Specification:\ntype:vpop\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\n\nResource Relationships:\n- Is edgeRef of vnf_258_dal3-paloalto\n- Is edgeRef of vnf_258_dal3-aruba\n- Has siteRef relationship with site_lla_dal3\n- Is edgeSelector_edgeRef of firewall_258_gtwy-dal3-258\n- Is edgeSelector_edgeRef of sdwan_258_gtwy-dal3-258\n- Is edgeRef of access_258_dal3-paloalto-wan1\n- Is edgeRef of access_258_dal3-paloalto-lan1\n- Is edgeRef of access_258_dal3-aruba-wan1\n- Is edgeRef of access_258_dal3-aruba-lan1",
+      "metadata": {
+        "resource_type": "edge",
+        "namespace": "lla",
+        "name": "dal3",
+        "uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.801478"
+      }
+    },
+    {
+      "id": "rel_vnf_258_dal3-paloalto_license_258_dal3-paloalto",
+      "type": "relationship",
+      "content": "The vnf resource 'dal3-paloalto' in namespace '258' has a licenseRef relationship with the license resource 'dal3-paloalto' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "licenseRef",
+        "source_resource": {
+          "resource_id": "vnf_258_dal3-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-paloalto"
+        },
+        "target_resource": {
+          "resource_id": "license_258_dal3-paloalto",
+          "kind": "license",
+          "namespace": "258",
+          "name": "dal3-paloalto"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_dal3-paloalto",
+        "target_uri": "http://lla.com/ontology#license_258_dal3-paloalto",
+        "timestamp": "2024-11-14T10:39:06.801483"
+      }
+    },
+    {
+      "id": "license_258_dal3-paloalto",
+      "type": "resource",
+      "content": "Resource license_258_dal3-paloalto information not found",
+      "metadata": {
+        "resource_type": "license",
+        "namespace": "258",
+        "name": "dal3-paloalto",
+        "uri": "http://lla.com/ontology#license_258_dal3-paloalto",
+        "timestamp": "2024-11-14T10:39:06.802459"
+      }
+    },
+    {
+      "id": "rel_vnf_258_dal3-aruba_sdwan_258_gtwy-dal3-258",
+      "type": "relationship",
+      "content": "The vnf resource 'dal3-aruba' in namespace '258' has a sdwanRef relationship with the sdwan resource 'gtwy-dal3-258' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "sdwanRef",
+        "source_resource": {
+          "resource_id": "vnf_258_dal3-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-aruba"
+        },
+        "target_resource": {
+          "resource_id": "sdwan_258_gtwy-dal3-258",
+          "kind": "sdwan",
+          "namespace": "258",
+          "name": "gtwy-dal3-258"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_dal3-aruba",
+        "target_uri": "http://lla.com/ontology#sdwan_258_gtwy-dal3-258",
+        "timestamp": "2024-11-14T10:39:06.802467"
+      }
+    },
+    {
+      "id": "vnf_258_dal3-aruba",
+      "type": "resource",
+      "content": "Resource Description:\nType: vnf\nName: dal3-aruba\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\ntype:gateway\nslid:2096796-11669615\nspeed:25m\nsdwanRef:\n  kind: sdwan\n  version: v1alpha\n  namespace: 258\n  name: gtwy-dal3-258\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: dal3\nlicenseRef:\n  kind: license\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba\nvendor:\n  name: aruba\n\nResource Relationships:\n- Has sdwanRef relationship with sdwan_258_gtwy-dal3-258\n- Has edgeRef relationship with edge_lla_dal3\n- Has licenseRef relationship with license_258_dal3-aruba\n- Is vnfRef of access_258_dal3-aruba-wan1\n- Is vnfRef of access_258_dal3-aruba-lan1",
+      "metadata": {
+        "resource_type": "vnf",
+        "namespace": "258",
+        "name": "dal3-aruba",
+        "uri": "http://lla.com/ontology#vnf_258_dal3-aruba",
+        "timestamp": "2024-11-14T10:39:06.802499"
+      }
+    },
+    {
+      "id": "sdwan_258_gtwy-dal3-258",
+      "type": "resource",
+      "content": "Resource Description:\nType: sdwan\nName: gtwy-dal3-258\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: coporate\n  type: gateway\n\nResource Specification:\ntype:gateway\nslid:2096796-11669615\nsize:SP-50\nspeed:25m\nedgeSelector:\n  edgeRef: \n    kind: edge\n    version: v1alpha\n    namespace: lla\n    name: dal3\nvendor:\n  name: aruba\n\nResource Relationships:\n- Is sdwanRef of vnf_258_dal3-aruba\n- Has edgeSelector_edgeRef relationship with edge_lla_dal3",
+      "metadata": {
+        "resource_type": "sdwan",
+        "namespace": "258",
+        "name": "gtwy-dal3-258",
+        "uri": "http://lla.com/ontology#sdwan_258_gtwy-dal3-258",
+        "timestamp": "2024-11-14T10:39:06.802523"
+      }
+    },
+    {
+      "id": "rel_vnf_258_dal3-aruba_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The vnf resource 'dal3-aruba' in namespace '258' has a edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "vnf_258_dal3-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-aruba"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_dal3-aruba",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.802528"
+      }
+    },
+    {
+      "id": "rel_vnf_258_dal3-aruba_license_258_dal3-aruba",
+      "type": "relationship",
+      "content": "The vnf resource 'dal3-aruba' in namespace '258' has a licenseRef relationship with the license resource 'dal3-aruba' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "licenseRef",
+        "source_resource": {
+          "resource_id": "vnf_258_dal3-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-aruba"
+        },
+        "target_resource": {
+          "resource_id": "license_258_dal3-aruba",
+          "kind": "license",
+          "namespace": "258",
+          "name": "dal3-aruba"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_dal3-aruba",
+        "target_uri": "http://lla.com/ontology#license_258_dal3-aruba",
+        "timestamp": "2024-11-14T10:39:06.802533"
+      }
+    },
+    {
+      "id": "license_258_dal3-aruba",
+      "type": "resource",
+      "content": "Resource license_258_dal3-aruba information not found",
+      "metadata": {
+        "resource_type": "license",
+        "namespace": "258",
+        "name": "dal3-aruba",
+        "uri": "http://lla.com/ontology#license_258_dal3-aruba",
+        "timestamp": "2024-11-14T10:39:06.803481"
+      }
+    },
+    {
+      "id": "rel_vnf_258_stk1-paloalto_firewall_258_gtwy-stk1-258",
+      "type": "relationship",
+      "content": "The vnf resource 'stk1-paloalto' in namespace '258' has a firewallRef relationship with the firewall resource 'gtwy-stk1-258' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "firewallRef",
+        "source_resource": {
+          "resource_id": "vnf_258_stk1-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-paloalto"
+        },
+        "target_resource": {
+          "resource_id": "firewall_258_gtwy-stk1-258",
+          "kind": "firewall",
+          "namespace": "258",
+          "name": "gtwy-stk1-258"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_stk1-paloalto",
+        "target_uri": "http://lla.com/ontology#firewall_258_gtwy-stk1-258",
+        "timestamp": "2024-11-14T10:39:06.803488"
+      }
+    },
+    {
+      "id": "vnf_258_stk1-paloalto",
+      "type": "resource",
+      "content": "Resource Description:\nType: vnf\nName: stk1-paloalto\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\ntype:sse\nslid:2096796-11669615\nspeed:25m\nfirewallRef:\n  kind: firewall\n  version: v1alpha\n  namespace: 258\n  name: gtwy-stk1-258\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: stk1\nlicenseRef:\n  kind: license\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto\nvendor:\n  name: paloalto\n\nResource Relationships:\n- Has firewallRef relationship with firewall_258_gtwy-stk1-258\n- Has edgeRef relationship with edge_lla_stk1\n- Has licenseRef relationship with license_258_stk1-paloalto\n- Is vnfRef of access_258_stk1-paloalto-wan1\n- Is vnfRef of access_258_stk1-paloalto-lan1",
+      "metadata": {
+        "resource_type": "vnf",
+        "namespace": "258",
+        "name": "stk1-paloalto",
+        "uri": "http://lla.com/ontology#vnf_258_stk1-paloalto",
+        "timestamp": "2024-11-14T10:39:06.803517"
+      }
+    },
+    {
+      "id": "firewall_258_gtwy-stk1-258",
+      "type": "resource",
+      "content": "Resource Description:\nType: firewall\nName: gtwy-stk1-258\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: coporate\n  type: sse\n\nResource Specification:\ntype:sse\nslid:2096796-11669615\nsize:Palo-50_PREM-BASIC-YU\nspeed:25m\nedgeSelector:\n  edgeRef: \n    kind: edge\n    version: v1alpha\n    namespace: lla\n    name: stk1\nvendor:\n  name: paloalto\n\nResource Relationships:\n- Is firewallRef of vnf_258_stk1-paloalto\n- Has edgeSelector_edgeRef relationship with edge_lla_stk1",
+      "metadata": {
+        "resource_type": "firewall",
+        "namespace": "258",
+        "name": "gtwy-stk1-258",
+        "uri": "http://lla.com/ontology#firewall_258_gtwy-stk1-258",
+        "timestamp": "2024-11-14T10:39:06.803537"
+      }
+    },
+    {
+      "id": "rel_vnf_258_stk1-paloalto_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The vnf resource 'stk1-paloalto' in namespace '258' has a edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "vnf_258_stk1-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-paloalto"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_stk1-paloalto",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.803542"
+      }
+    },
+    {
+      "id": "edge_lla_stk1",
+      "type": "resource",
+      "content": "Resource Description:\nType: edge\nName: stk1\nNamespace: lla\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: core\n  type: vpop\n\nResource Specification:\ntype:vpop\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\n\nResource Relationships:\n- Is edgeRef of vnf_258_stk1-paloalto\n- Is edgeRef of vnf_258_stk1-aruba\n- Has siteRef relationship with site_lla_stk1\n- Is edgeSelector_edgeRef of firewall_258_gtwy-stk1-258\n- Is edgeSelector_edgeRef of sdwan_258_gtwy-stk1-258\n- Is edgeRef of access_258_stk1-paloalto-wan1\n- Is edgeRef of access_258_stk1-paloalto-lan1\n- Is edgeRef of access_258_stk1-aruba-wan1\n- Is edgeRef of access_258_stk1-aruba-lan1",
+      "metadata": {
+        "resource_type": "edge",
+        "namespace": "lla",
+        "name": "stk1",
+        "uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.803563"
+      }
+    },
+    {
+      "id": "rel_vnf_258_stk1-paloalto_license_258_stk1-paloalto",
+      "type": "relationship",
+      "content": "The vnf resource 'stk1-paloalto' in namespace '258' has a licenseRef relationship with the license resource 'stk1-paloalto' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "licenseRef",
+        "source_resource": {
+          "resource_id": "vnf_258_stk1-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-paloalto"
+        },
+        "target_resource": {
+          "resource_id": "license_258_stk1-paloalto",
+          "kind": "license",
+          "namespace": "258",
+          "name": "stk1-paloalto"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_stk1-paloalto",
+        "target_uri": "http://lla.com/ontology#license_258_stk1-paloalto",
+        "timestamp": "2024-11-14T10:39:06.803566"
+      }
+    },
+    {
+      "id": "license_258_stk1-paloalto",
+      "type": "resource",
+      "content": "Resource license_258_stk1-paloalto information not found",
+      "metadata": {
+        "resource_type": "license",
+        "namespace": "258",
+        "name": "stk1-paloalto",
+        "uri": "http://lla.com/ontology#license_258_stk1-paloalto",
+        "timestamp": "2024-11-14T10:39:06.804490"
+      }
+    },
+    {
+      "id": "rel_vnf_258_stk1-aruba_sdwan_258_gtwy-stk1-258",
+      "type": "relationship",
+      "content": "The vnf resource 'stk1-aruba' in namespace '258' has a sdwanRef relationship with the sdwan resource 'gtwy-stk1-258' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "sdwanRef",
+        "source_resource": {
+          "resource_id": "vnf_258_stk1-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-aruba"
+        },
+        "target_resource": {
+          "resource_id": "sdwan_258_gtwy-stk1-258",
+          "kind": "sdwan",
+          "namespace": "258",
+          "name": "gtwy-stk1-258"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_stk1-aruba",
+        "target_uri": "http://lla.com/ontology#sdwan_258_gtwy-stk1-258",
+        "timestamp": "2024-11-14T10:39:06.804498"
+      }
+    },
+    {
+      "id": "vnf_258_stk1-aruba",
+      "type": "resource",
+      "content": "Resource Description:\nType: vnf\nName: stk1-aruba\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\ntype:gateway\nslid:2096796-11669615\nspeed:25m\nsdwanRef:\n  kind: sdwan\n  version: v1alpha\n  namespace: 258\n  name: gtwy-stk1-258\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: stk1\nlicenseRef:\n  kind: license\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba\nvendor:\n  name: aruba\n\nResource Relationships:\n- Has sdwanRef relationship with sdwan_258_gtwy-stk1-258\n- Has edgeRef relationship with edge_lla_stk1\n- Has licenseRef relationship with license_258_stk1-aruba\n- Is vnfRef of access_258_stk1-aruba-wan1\n- Is vnfRef of access_258_stk1-aruba-lan1",
+      "metadata": {
+        "resource_type": "vnf",
+        "namespace": "258",
+        "name": "stk1-aruba",
+        "uri": "http://lla.com/ontology#vnf_258_stk1-aruba",
+        "timestamp": "2024-11-14T10:39:06.804527"
+      }
+    },
+    {
+      "id": "sdwan_258_gtwy-stk1-258",
+      "type": "resource",
+      "content": "Resource Description:\nType: sdwan\nName: gtwy-stk1-258\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: coporate\n  type: gateway\n\nResource Specification:\ntype:gateway\nslid:2096796-11669615\nsize:SP-50\nspeed:25m\nedgeSelector:\n  edgeRef: \n    kind: edge\n    version: v1alpha\n    namespace: lla\n    name: stk1\nvendor:\n  name: aruba\n\nResource Relationships:\n- Is sdwanRef of vnf_258_stk1-aruba\n- Has edgeSelector_edgeRef relationship with edge_lla_stk1",
+      "metadata": {
+        "resource_type": "sdwan",
+        "namespace": "258",
+        "name": "gtwy-stk1-258",
+        "uri": "http://lla.com/ontology#sdwan_258_gtwy-stk1-258",
+        "timestamp": "2024-11-14T10:39:06.804546"
+      }
+    },
+    {
+      "id": "rel_vnf_258_stk1-aruba_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The vnf resource 'stk1-aruba' in namespace '258' has a edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "vnf_258_stk1-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-aruba"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_stk1-aruba",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.804550"
+      }
+    },
+    {
+      "id": "rel_vnf_258_stk1-aruba_license_258_stk1-aruba",
+      "type": "relationship",
+      "content": "The vnf resource 'stk1-aruba' in namespace '258' has a licenseRef relationship with the license resource 'stk1-aruba' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "licenseRef",
+        "source_resource": {
+          "resource_id": "vnf_258_stk1-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-aruba"
+        },
+        "target_resource": {
+          "resource_id": "license_258_stk1-aruba",
+          "kind": "license",
+          "namespace": "258",
+          "name": "stk1-aruba"
+        },
+        "source_uri": "http://lla.com/ontology#vnf_258_stk1-aruba",
+        "target_uri": "http://lla.com/ontology#license_258_stk1-aruba",
+        "timestamp": "2024-11-14T10:39:06.804554"
+      }
+    },
+    {
+      "id": "license_258_stk1-aruba",
+      "type": "resource",
+      "content": "Resource license_258_stk1-aruba information not found",
+      "metadata": {
+        "resource_type": "license",
+        "namespace": "258",
+        "name": "stk1-aruba",
+        "uri": "http://lla.com/ontology#license_258_stk1-aruba",
+        "timestamp": "2024-11-14T10:39:06.805483"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_dal3-paloalto-wan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The ipamblock resource 'dal3-paloalto-wan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_dal3-paloalto-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_dal3-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805490"
+      }
+    },
+    {
+      "id": "ipamblock_258_dal3-paloalto-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: dal3-paloalto-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.240/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_dal3\n- Is ipamBlockRef of access_258_dal3-paloalto-wan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "dal3-paloalto-wan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_dal3-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.805513"
+      }
+    },
+    {
+      "id": "site_lla_dal3",
+      "type": "resource",
+      "content": "Resource Description:\nType: site\nName: dal3\nNamespace: lla\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: core\n  type: vpop\n\nResource Specification:\naddress:\n  line1: 1950 N Stemmons Fwy\n  city: Dallas\n  state: Texas\n  zipcode: 75207\n  country: USA\n  latitude: 32.80139\n  longitude: -96.819534\n  glid: US8645R52J+F5FBS00\n  line2: None\nfriendly:DAL3 Network Function Virtualization Pod\nvpop:\n  name: dal3\n  routers: \n    - \n      router: cr6-dal3\n      routerFqdn: cr6-dal3.ip4.lla.net\n      primary: True\n      interface: ae11\n      group: 192\n      inheritGroup: 193\n      inheritIntf: ae11.10\n      asn: 3257\n    - \n      router: cr5-dal3\n      routerFqdn: cr5-dal3.ip4.lla.net\n      primary: False\n      interface: ae11\n      group: 192\n      inheritGroup: 193\n      inheritIntf: ae11.10\n      asn: 3257\n\nResource Relationships:\n- Is siteRef of ipamblock_258_dal3-paloalto-wan1\n- Is siteRef of ipamblock_258_dal3-paloalto-lan1\n- Is siteRef of ipamblock_258_dal3-aruba-wan1\n- Is siteRef of ipamblock_258_dal3-aruba-lan1\n- Is siteRef of edge_lla_dal3\n- Is siteRef of orchestrator_258_paloalto-258\n- Is siteRef of orchestrator_258_aruba-258\n- Is siteRef of access_258_dal3-paloalto-wan1\n- Is siteRef of access_258_dal3-paloalto-lan1\n- Is siteRef of access_258_dal3-aruba-wan1\n- Is siteRef of access_258_dal3-aruba-lan1",
+      "metadata": {
+        "resource_type": "site",
+        "namespace": "lla",
+        "name": "dal3",
+        "uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805564"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_dal3-paloalto-lan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The ipamblock resource 'dal3-paloalto-lan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_dal3-paloalto-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_dal3-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805569"
+      }
+    },
+    {
+      "id": "ipamblock_258_dal3-paloalto-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: dal3-paloalto-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.248/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_dal3\n- Is ipamBlockRef of access_258_dal3-paloalto-lan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "dal3-paloalto-lan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_dal3-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.805586"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_dal3-aruba-wan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The ipamblock resource 'dal3-aruba-wan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_dal3-aruba-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_dal3-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805590"
+      }
+    },
+    {
+      "id": "ipamblock_258_dal3-aruba-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: dal3-aruba-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.256/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_dal3\n- Is ipamBlockRef of access_258_dal3-aruba-wan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "dal3-aruba-wan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_dal3-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.805606"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_dal3-aruba-lan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The ipamblock resource 'dal3-aruba-lan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_dal3-aruba-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_dal3-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805610"
+      }
+    },
+    {
+      "id": "ipamblock_258_dal3-aruba-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: dal3-aruba-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.264/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_dal3\n- Is ipamBlockRef of access_258_dal3-aruba-lan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "dal3-aruba-lan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_dal3-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.805624"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_stk1-paloalto-wan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The ipamblock resource 'stk1-paloalto-wan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_stk1-paloalto-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_stk1-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805629"
+      }
+    },
+    {
+      "id": "ipamblock_258_stk1-paloalto-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: stk1-paloalto-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.272/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_stk1\n- Is ipamBlockRef of access_258_stk1-paloalto-wan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "stk1-paloalto-wan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_stk1-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.805643"
+      }
+    },
+    {
+      "id": "site_lla_stk1",
+      "type": "resource",
+      "content": "Resource Description:\nType: site\nName: stk1\nNamespace: lla\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: core\n  type: vpop\n\nResource Specification:\naddress:\n  line1: 11 Esbogatan\n  city: Kista\n  state: Stockholms l\u00e4n\n  zipcode: 164 74\n  country: SE\n  latitude: 59.422306\n  longitude: 17.918524\n  glid: SE9FFVCWC8+RJHBS00\n  line2: None\nfriendly:STK1 Network Function Virtualization Pod\nvpop:\n  name: stk1\n  routers: \n    - \n      router: cr6-stk1\n      routerFqdn: cr6-stk1.ip4.lla.net\n      primary: True\n      interface: ae11\n      group: 192\n      inheritGroup: 193\n      inheritIntf: ae11.10\n      asn: 3257\n    - \n      router: cr5-stk1\n      routerFqdn: cr5-stk1.ip4.lla.net\n      primary: False\n      interface: ae11\n      group: 192\n      inheritGroup: 193\n      inheritIntf: ae11.10\n      asn: 3257\n\nResource Relationships:\n- Is siteRef of ipamblock_258_stk1-paloalto-wan1\n- Is siteRef of ipamblock_258_stk1-paloalto-lan1\n- Is siteRef of ipamblock_258_stk1-aruba-wan1\n- Is siteRef of ipamblock_258_stk1-aruba-lan1\n- Is siteRef of edge_lla_stk1\n- Is siteRef of access_258_stk1-paloalto-wan1\n- Is siteRef of access_258_stk1-paloalto-lan1\n- Is siteRef of access_258_stk1-aruba-wan1\n- Is siteRef of access_258_stk1-aruba-lan1",
+      "metadata": {
+        "resource_type": "site",
+        "namespace": "lla",
+        "name": "stk1",
+        "uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805678"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_stk1-paloalto-lan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The ipamblock resource 'stk1-paloalto-lan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_stk1-paloalto-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_stk1-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805682"
+      }
+    },
+    {
+      "id": "ipamblock_258_stk1-paloalto-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: stk1-paloalto-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.280/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_stk1\n- Is ipamBlockRef of access_258_stk1-paloalto-lan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "stk1-paloalto-lan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_stk1-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.805698"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_stk1-aruba-wan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The ipamblock resource 'stk1-aruba-wan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_stk1-aruba-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_stk1-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805702"
+      }
+    },
+    {
+      "id": "ipamblock_258_stk1-aruba-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: stk1-aruba-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.288/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_stk1\n- Is ipamBlockRef of access_258_stk1-aruba-wan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "stk1-aruba-wan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_stk1-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.805720"
+      }
+    },
+    {
+      "id": "rel_ipamblock_258_stk1-aruba-lan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The ipamblock resource 'stk1-aruba-lan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "ipamblock_258_stk1-aruba-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#ipamblock_258_stk1-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805724"
+      }
+    },
+    {
+      "id": "ipamblock_258_stk1-aruba-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: ipamblock\nName: stk1-aruba-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nprefix:29\ncidr:70.66.58.296/29\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\ntype:IPv4\nslid:2096796-11669615\nallocationType:MPLS\npool:MPLS WAN\n\nResource Relationships:\n- Has siteRef relationship with site_lla_stk1\n- Is ipamBlockRef of access_258_stk1-aruba-lan1",
+      "metadata": {
+        "resource_type": "ipamblock",
+        "namespace": "258",
+        "name": "stk1-aruba-lan1",
+        "uri": "http://lla.com/ontology#ipamblock_258_stk1-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.805739"
+      }
+    },
+    {
+      "id": "rel_edge_lla_dal3_site_lla_dal3",
+      "type": "relationship",
+      "content": "The edge resource 'dal3' in namespace 'lla' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805743"
+      }
+    },
+    {
+      "id": "rel_edge_lla_stk1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The edge resource 'stk1' in namespace 'lla' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805746"
+      }
+    },
+    {
+      "id": "rel_firewall_258_gtwy-dal3-258_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The firewall resource 'gtwy-dal3-258' in namespace '258' has a edgeSelector_edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeSelector_edgeRef",
+        "source_resource": {
+          "resource_id": "firewall_258_gtwy-dal3-258",
+          "kind": "firewall",
+          "namespace": "258",
+          "name": "gtwy-dal3-258"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#firewall_258_gtwy-dal3-258",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805749"
+      }
+    },
+    {
+      "id": "rel_firewall_258_gtwy-stk1-258_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The firewall resource 'gtwy-stk1-258' in namespace '258' has a edgeSelector_edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeSelector_edgeRef",
+        "source_resource": {
+          "resource_id": "firewall_258_gtwy-stk1-258",
+          "kind": "firewall",
+          "namespace": "258",
+          "name": "gtwy-stk1-258"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#firewall_258_gtwy-stk1-258",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805753"
+      }
+    },
+    {
+      "id": "rel_sdwan_258_gtwy-dal3-258_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The sdwan resource 'gtwy-dal3-258' in namespace '258' has a edgeSelector_edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeSelector_edgeRef",
+        "source_resource": {
+          "resource_id": "sdwan_258_gtwy-dal3-258",
+          "kind": "sdwan",
+          "namespace": "258",
+          "name": "gtwy-dal3-258"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#sdwan_258_gtwy-dal3-258",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.805756"
+      }
+    },
+    {
+      "id": "rel_sdwan_258_gtwy-stk1-258_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The sdwan resource 'gtwy-stk1-258' in namespace '258' has a edgeSelector_edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeSelector_edgeRef",
+        "source_resource": {
+          "resource_id": "sdwan_258_gtwy-stk1-258",
+          "kind": "sdwan",
+          "namespace": "258",
+          "name": "gtwy-stk1-258"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#sdwan_258_gtwy-stk1-258",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.805762"
+      }
+    },
+    {
+      "id": "rel_vlan_258_dal3-paloalto-wan1_access_258_dal3-paloalto-wan1",
+      "type": "relationship",
+      "content": "The vlan resource 'dal3-paloalto-wan1' in namespace '258' has a accessRef relationship with the access resource 'dal3-paloalto-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_dal3-paloalto-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_dal3-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_dal3-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#access_258_dal3-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.805765"
+      }
+    },
+    {
+      "id": "vlan_258_dal3-paloalto-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: dal3-paloalto-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:444a8ff8-152d-434c-9953-f658d821f380\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto-wan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_dal3-paloalto-wan1\n- Is vlanRef of access_258_dal3-paloalto-wan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "dal3-paloalto-wan1",
+        "uri": "http://lla.com/ontology#vlan_258_dal3-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.805781"
+      }
+    },
+    {
+      "id": "access_258_dal3-paloalto-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: dal3-paloalto-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: c96f3836-1e50-4684-b41c-dad4a5e9a2a4\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: dal3\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto-wan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto-wan1\nipV4:70.66.58.246\nipV4Gateway:70.66.58.241\nipV4Prefix:29\nrouter:\n  router: cr6-dal3\n  routerFqdn: cr6-dal3.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 1950 N Stemmons Fwy\n  city: Dallas\n  state: Texas\n  zipcode: 75207\n  country: USA\n  latitude: 32.80139\n  longitude: -96.819534\n  glid: US8645R52J+F5FBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30119\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_dal3-paloalto-wan1\n- Has siteRef relationship with site_lla_dal3\n- Has edgeRef relationship with edge_lla_dal3\n- Has vnfRef relationship with vnf_258_dal3-paloalto\n- Has ipamBlockRef relationship with ipamblock_258_dal3-paloalto-wan1\n- Has vlanRef relationship with vlan_258_dal3-paloalto-wan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "dal3-paloalto-wan1",
+        "uri": "http://lla.com/ontology#access_258_dal3-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.805830"
+      }
+    },
+    {
+      "id": "rel_vlan_258_dal3-paloalto-lan1_access_258_dal3-paloalto-lan1",
+      "type": "relationship",
+      "content": "The vlan resource 'dal3-paloalto-lan1' in namespace '258' has a accessRef relationship with the access resource 'dal3-paloalto-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_dal3-paloalto-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_dal3-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_dal3-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#access_258_dal3-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.805834"
+      }
+    },
+    {
+      "id": "vlan_258_dal3-paloalto-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: dal3-paloalto-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:3eeba0d5-cb5e-4dfd-8743-327cc48856d7\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto-lan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_dal3-paloalto-lan1\n- Is vlanRef of access_258_dal3-paloalto-lan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "dal3-paloalto-lan1",
+        "uri": "http://lla.com/ontology#vlan_258_dal3-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.805851"
+      }
+    },
+    {
+      "id": "access_258_dal3-paloalto-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: dal3-paloalto-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: 1e847d49-3930-4a2c-964f-04fe95ce40ff\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: dal3\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto-lan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: dal3-paloalto-lan1\nipV4:70.66.58.254\nipV4Gateway:70.66.58.249\nipV4Prefix:29\nrouter:\n  router: cr6-dal3\n  routerFqdn: cr6-dal3.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 1950 N Stemmons Fwy\n  city: Dallas\n  state: Texas\n  zipcode: 75207\n  country: USA\n  latitude: 32.80139\n  longitude: -96.819534\n  glid: US8645R52J+F5FBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30155\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_dal3-paloalto-lan1\n- Has siteRef relationship with site_lla_dal3\n- Has edgeRef relationship with edge_lla_dal3\n- Has vnfRef relationship with vnf_258_dal3-paloalto\n- Has ipamBlockRef relationship with ipamblock_258_dal3-paloalto-lan1\n- Has vlanRef relationship with vlan_258_dal3-paloalto-lan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "dal3-paloalto-lan1",
+        "uri": "http://lla.com/ontology#access_258_dal3-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.805897"
+      }
+    },
+    {
+      "id": "rel_vlan_258_dal3-aruba-wan1_access_258_dal3-aruba-wan1",
+      "type": "relationship",
+      "content": "The vlan resource 'dal3-aruba-wan1' in namespace '258' has a accessRef relationship with the access resource 'dal3-aruba-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_dal3-aruba-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_dal3-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_dal3-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#access_258_dal3-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.805901"
+      }
+    },
+    {
+      "id": "vlan_258_dal3-aruba-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: dal3-aruba-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:1417c13e-c985-43d4-bc25-3c085e473933\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba-wan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_dal3-aruba-wan1\n- Is vlanRef of access_258_dal3-aruba-wan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "dal3-aruba-wan1",
+        "uri": "http://lla.com/ontology#vlan_258_dal3-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.805915"
+      }
+    },
+    {
+      "id": "access_258_dal3-aruba-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: dal3-aruba-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: b7600c8b-7d50-4cc8-b80d-a251187389d0\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: dal3\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba-wan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba-wan1\nipV4:70.66.58.262\nipV4Gateway:70.66.58.257\nipV4Prefix:29\nrouter:\n  router: cr6-dal3\n  routerFqdn: cr6-dal3.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 1950 N Stemmons Fwy\n  city: Dallas\n  state: Texas\n  zipcode: 75207\n  country: USA\n  latitude: 32.80139\n  longitude: -96.819534\n  glid: US8645R52J+F5FBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30109\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_dal3-aruba-wan1\n- Has siteRef relationship with site_lla_dal3\n- Has edgeRef relationship with edge_lla_dal3\n- Has vnfRef relationship with vnf_258_dal3-aruba\n- Has ipamBlockRef relationship with ipamblock_258_dal3-aruba-wan1\n- Has vlanRef relationship with vlan_258_dal3-aruba-wan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "dal3-aruba-wan1",
+        "uri": "http://lla.com/ontology#access_258_dal3-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.805960"
+      }
+    },
+    {
+      "id": "rel_vlan_258_dal3-aruba-lan1_access_258_dal3-aruba-lan1",
+      "type": "relationship",
+      "content": "The vlan resource 'dal3-aruba-lan1' in namespace '258' has a accessRef relationship with the access resource 'dal3-aruba-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_dal3-aruba-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_dal3-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_dal3-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#access_258_dal3-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.805964"
+      }
+    },
+    {
+      "id": "vlan_258_dal3-aruba-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: dal3-aruba-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:bb47f611-ec97-44a0-8846-6312606f72d8\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba-lan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_dal3-aruba-lan1\n- Is vlanRef of access_258_dal3-aruba-lan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "dal3-aruba-lan1",
+        "uri": "http://lla.com/ontology#vlan_258_dal3-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.805980"
+      }
+    },
+    {
+      "id": "access_258_dal3-aruba-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: dal3-aruba-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: ba13bf46-0914-436f-9161-e9f5ebb37637\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: dal3\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba-lan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: dal3-aruba-lan1\nipV4:70.66.58.270\nipV4Gateway:70.66.58.265\nipV4Prefix:29\nrouter:\n  router: cr6-dal3\n  routerFqdn: cr6-dal3.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 1950 N Stemmons Fwy\n  city: Dallas\n  state: Texas\n  zipcode: 75207\n  country: USA\n  latitude: 32.80139\n  longitude: -96.819534\n  glid: US8645R52J+F5FBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30186\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_dal3-aruba-lan1\n- Has siteRef relationship with site_lla_dal3\n- Has edgeRef relationship with edge_lla_dal3\n- Has vnfRef relationship with vnf_258_dal3-aruba\n- Has ipamBlockRef relationship with ipamblock_258_dal3-aruba-lan1\n- Has vlanRef relationship with vlan_258_dal3-aruba-lan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "dal3-aruba-lan1",
+        "uri": "http://lla.com/ontology#access_258_dal3-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806024"
+      }
+    },
+    {
+      "id": "rel_vlan_258_stk1-paloalto-wan1_access_258_stk1-paloalto-wan1",
+      "type": "relationship",
+      "content": "The vlan resource 'stk1-paloalto-wan1' in namespace '258' has a accessRef relationship with the access resource 'stk1-paloalto-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_stk1-paloalto-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_stk1-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_stk1-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#access_258_stk1-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.806028"
+      }
+    },
+    {
+      "id": "vlan_258_stk1-paloalto-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: stk1-paloalto-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:7cffe336-b07e-4423-b074-ebe0646421b9\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto-wan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_stk1-paloalto-wan1\n- Is vlanRef of access_258_stk1-paloalto-wan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "stk1-paloalto-wan1",
+        "uri": "http://lla.com/ontology#vlan_258_stk1-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.806042"
+      }
+    },
+    {
+      "id": "access_258_stk1-paloalto-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: stk1-paloalto-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: 435d0f79-7110-4a1d-b964-e5b39baf034d\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: stk1\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto-wan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto-wan1\nipV4:70.66.58.278\nipV4Gateway:70.66.58.273\nipV4Prefix:29\nrouter:\n  router: cr6-stk1\n  routerFqdn: cr6-stk1.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 11 Esbogatan\n  city: Kista\n  state: Stockholms l\u00e4n\n  zipcode: 164 74\n  country: SE\n  latitude: 59.422306\n  longitude: 17.918524\n  glid: SE9FFVCWC8+RJHBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30145\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_stk1-paloalto-wan1\n- Has siteRef relationship with site_lla_stk1\n- Has edgeRef relationship with edge_lla_stk1\n- Has vnfRef relationship with vnf_258_stk1-paloalto\n- Has ipamBlockRef relationship with ipamblock_258_stk1-paloalto-wan1\n- Has vlanRef relationship with vlan_258_stk1-paloalto-wan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "stk1-paloalto-wan1",
+        "uri": "http://lla.com/ontology#access_258_stk1-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.806085"
+      }
+    },
+    {
+      "id": "rel_vlan_258_stk1-paloalto-lan1_access_258_stk1-paloalto-lan1",
+      "type": "relationship",
+      "content": "The vlan resource 'stk1-paloalto-lan1' in namespace '258' has a accessRef relationship with the access resource 'stk1-paloalto-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_stk1-paloalto-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_stk1-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_stk1-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#access_258_stk1-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.806113"
+      }
+    },
+    {
+      "id": "vlan_258_stk1-paloalto-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: stk1-paloalto-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:569bb8e6-0d67-4d0c-9c7f-0831252adc61\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto-lan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_stk1-paloalto-lan1\n- Is vlanRef of access_258_stk1-paloalto-lan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "stk1-paloalto-lan1",
+        "uri": "http://lla.com/ontology#vlan_258_stk1-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.806147"
+      }
+    },
+    {
+      "id": "access_258_stk1-paloalto-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: stk1-paloalto-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: f92dc8de-4643-4ab0-a5aa-764d659012a9\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: stk1\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto-lan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: stk1-paloalto-lan1\nipV4:70.66.58.286\nipV4Gateway:70.66.58.281\nipV4Prefix:29\nrouter:\n  router: cr6-stk1\n  routerFqdn: cr6-stk1.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 11 Esbogatan\n  city: Kista\n  state: Stockholms l\u00e4n\n  zipcode: 164 74\n  country: SE\n  latitude: 59.422306\n  longitude: 17.918524\n  glid: SE9FFVCWC8+RJHBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30143\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_stk1-paloalto-lan1\n- Has siteRef relationship with site_lla_stk1\n- Has edgeRef relationship with edge_lla_stk1\n- Has vnfRef relationship with vnf_258_stk1-paloalto\n- Has ipamBlockRef relationship with ipamblock_258_stk1-paloalto-lan1\n- Has vlanRef relationship with vlan_258_stk1-paloalto-lan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "stk1-paloalto-lan1",
+        "uri": "http://lla.com/ontology#access_258_stk1-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.806259"
+      }
+    },
+    {
+      "id": "rel_vlan_258_stk1-aruba-wan1_access_258_stk1-aruba-wan1",
+      "type": "relationship",
+      "content": "The vlan resource 'stk1-aruba-wan1' in namespace '258' has a accessRef relationship with the access resource 'stk1-aruba-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_stk1-aruba-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_stk1-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_stk1-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#access_258_stk1-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.806271"
+      }
+    },
+    {
+      "id": "vlan_258_stk1-aruba-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: stk1-aruba-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:31f42a40-0a72-48e6-b96b-8613342081ca\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba-wan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_stk1-aruba-wan1\n- Is vlanRef of access_258_stk1-aruba-wan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "stk1-aruba-wan1",
+        "uri": "http://lla.com/ontology#vlan_258_stk1-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.806298"
+      }
+    },
+    {
+      "id": "access_258_stk1-aruba-wan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: stk1-aruba-wan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: 70750e76-d4d8-4372-8256-4804c18c9811\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: stk1\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba-wan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba-wan1\nipV4:70.66.58.294\nipV4Gateway:70.66.58.289\nipV4Prefix:29\nrouter:\n  router: cr6-stk1\n  routerFqdn: cr6-stk1.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 11 Esbogatan\n  city: Kista\n  state: Stockholms l\u00e4n\n  zipcode: 164 74\n  country: SE\n  latitude: 59.422306\n  longitude: 17.918524\n  glid: SE9FFVCWC8+RJHBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30156\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_stk1-aruba-wan1\n- Has siteRef relationship with site_lla_stk1\n- Has edgeRef relationship with edge_lla_stk1\n- Has vnfRef relationship with vnf_258_stk1-aruba\n- Has ipamBlockRef relationship with ipamblock_258_stk1-aruba-wan1\n- Has vlanRef relationship with vlan_258_stk1-aruba-wan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "stk1-aruba-wan1",
+        "uri": "http://lla.com/ontology#access_258_stk1-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.806344"
+      }
+    },
+    {
+      "id": "rel_vlan_258_stk1-aruba-lan1_access_258_stk1-aruba-lan1",
+      "type": "relationship",
+      "content": "The vlan resource 'stk1-aruba-lan1' in namespace '258' has a accessRef relationship with the access resource 'stk1-aruba-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "accessRef",
+        "source_resource": {
+          "resource_id": "vlan_258_stk1-aruba-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "access_258_stk1-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#vlan_258_stk1-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#access_258_stk1-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806348"
+      }
+    },
+    {
+      "id": "vlan_258_stk1-aruba-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: vlan\nName: stk1-aruba-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n\n\nResource Specification:\nuuid:25254e4c-fdcd-4ca3-9828-5aff287d9eb4\ntype:VPOP-MPLS\nvlanId:1370\naccessRef:\n  kind: access\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba-lan1\n\nResource Relationships:\n- Has accessRef relationship with access_258_stk1-aruba-lan1\n- Is vlanRef of access_258_stk1-aruba-lan1",
+      "metadata": {
+        "resource_type": "vlan",
+        "namespace": "258",
+        "name": "stk1-aruba-lan1",
+        "uri": "http://lla.com/ontology#vlan_258_stk1-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806364"
+      }
+    },
+    {
+      "id": "access_258_stk1-aruba-lan1",
+      "type": "resource",
+      "content": "Resource Description:\nType: access\nName: stk1-aruba-lan1\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  workflow-id: 93b0abce-b997-47c6-a453-60bb9b0762c2\n\nResource Specification:\ntype:VPOP-MPLS\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: stk1\nedgeRef:\n  kind: edge\n  version: v1alpha\n  namespace: lla\n  name: stk1\nvnfRef:\n  kind: vnf\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba\nipamBlockRef:\n  kind: ipamblock\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba-lan1\nvlanRef:\n  kind: vlan\n  version: v1alpha\n  namespace: 258\n  name: stk1-aruba-lan1\nipV4:70.66.58.302\nipV4Gateway:70.66.58.297\nipV4Prefix:29\nrouter:\n  router: cr6-stk1\n  routerFqdn: cr6-stk1.ip4.lla.net\n  primary: True\n  group: 192\n  asn: 3257\n  inheritGroup: 193\n  inheritIntf: ae11.10\n  interface: ae11\naddress:\n  line1: 11 Esbogatan\n  city: Kista\n  state: Stockholms l\u00e4n\n  zipcode: 164 74\n  country: SE\n  latitude: 59.422306\n  longitude: 17.918524\n  glid: SE9FFVCWC8+RJHBS00\n  line2: None\nslid:2096796-11669615\nvlanId:1370\nvrfId:30191\nspeed:25m\nstatus:\n  - \n    phase: provision\n    description: Provision MPLS access.\n    status: completed\n    startDate: 1731515941705\n    endDate: 1731515942705\n\nResource Relationships:\n- Is accessRef of vlan_258_stk1-aruba-lan1\n- Has siteRef relationship with site_lla_stk1\n- Has edgeRef relationship with edge_lla_stk1\n- Has vnfRef relationship with vnf_258_stk1-aruba\n- Has ipamBlockRef relationship with ipamblock_258_stk1-aruba-lan1\n- Has vlanRef relationship with vlan_258_stk1-aruba-lan1",
+      "metadata": {
+        "resource_type": "access",
+        "namespace": "258",
+        "name": "stk1-aruba-lan1",
+        "uri": "http://lla.com/ontology#access_258_stk1-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806408"
+      }
+    },
+    {
+      "id": "rel_account_258_258_customergroup_cg-93_cg-93",
+      "type": "relationship",
+      "content": "The account resource '258' in namespace '258' has a customerGroupRef relationship with the customergroup resource 'cg-93' in namespace 'cg-93'.",
+      "metadata": {
+        "relationship_type": "customerGroupRef",
+        "source_resource": {
+          "resource_id": "account_258_258",
+          "kind": "account",
+          "namespace": "258",
+          "name": "258"
+        },
+        "target_resource": {
+          "resource_id": "customergroup_cg-93_cg-93",
+          "kind": "customergroup",
+          "namespace": "cg-93",
+          "name": "cg-93"
+        },
+        "source_uri": "http://lla.com/ontology#account_258_258",
+        "target_uri": "http://lla.com/ontology#customergroup_cg-93_cg-93",
+        "timestamp": "2024-11-14T10:39:06.806412"
+      }
+    },
+    {
+      "id": "account_258_258",
+      "type": "resource",
+      "content": "Resource Description:\nType: account\nName: 258\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network-code: DATAPA\n  source: cmd\n  cmd-company-id: 93\n  net-lla-naas-aruba-api-classifier: cmd-backfill\n\nResource Specification:\nnetworkCode:DATAPA\nname:Mock Company\nkicker:\n  id: 780\nsid:None\ncustomerGroupRef:\n  kind: customergroup\n  version: v1alpha\n  namespace: cg-93\n  name: cg-93\nconnectbase:\n  advCpqAccountId: 1077494\n\nResource Relationships:\n- Has customerGroupRef relationship with customergroup_cg-93_cg-93",
+      "metadata": {
+        "resource_type": "account",
+        "namespace": "258",
+        "name": "258",
+        "uri": "http://lla.com/ontology#account_258_258",
+        "timestamp": "2024-11-14T10:39:06.806434"
+      }
+    },
+    {
+      "id": "customergroup_cg-93_cg-93",
+      "type": "resource",
+      "content": "Resource Description:\nType: customergroup\nName: cg-93\nNamespace: cg-93\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  source: cmd\n  cmd-id: 93\n  net-lla-naas-aruba-api-classifier: cmd-backfill\n\nResource Specification:\nname:Mock Company\naccountRefs:\n  - \n    kind: account\n    version: v1alpha\n    namespace: 258\n    name: 258\n\nResource Relationships:\n- Is customerGroupRef of account_258_258",
+      "metadata": {
+        "resource_type": "customergroup",
+        "namespace": "cg-93",
+        "name": "cg-93",
+        "uri": "http://lla.com/ontology#customergroup_cg-93_cg-93",
+        "timestamp": "2024-11-14T10:39:06.806452"
+      }
+    },
+    {
+      "id": "rel_orchestrator_258_paloalto-258_site_lla_dal3",
+      "type": "relationship",
+      "content": "The orchestrator resource 'paloalto-258' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "orchestrator_258_paloalto-258",
+          "kind": "orchestrator",
+          "namespace": "258",
+          "name": "paloalto-258"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#orchestrator_258_paloalto-258",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806458"
+      }
+    },
+    {
+      "id": "orchestrator_258_paloalto-258",
+      "type": "resource",
+      "content": "Resource Description:\nType: orchestrator\nName: paloalto-258\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: coporate\n\nResource Specification:\nslid:2096796-11669614\nhostname:paloalto-258\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\nvendor:\n  name: paloalto\n\nResource Relationships:\n- Has siteRef relationship with site_lla_dal3",
+      "metadata": {
+        "resource_type": "orchestrator",
+        "namespace": "258",
+        "name": "paloalto-258",
+        "uri": "http://lla.com/ontology#orchestrator_258_paloalto-258",
+        "timestamp": "2024-11-14T10:39:06.806474"
+      }
+    },
+    {
+      "id": "rel_orchestrator_258_aruba-258_site_lla_dal3",
+      "type": "relationship",
+      "content": "The orchestrator resource 'aruba-258' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "orchestrator_258_aruba-258",
+          "kind": "orchestrator",
+          "namespace": "258",
+          "name": "aruba-258"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#orchestrator_258_aruba-258",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806478"
+      }
+    },
+    {
+      "id": "orchestrator_258_aruba-258",
+      "type": "resource",
+      "content": "Resource Description:\nType: orchestrator\nName: aruba-258\nNamespace: 258\n\nMetadata Information:\ndateCreated:1731515940705\ndateUpdated:1731515941705\nlabels:\n  network: coporate\n\nResource Specification:\nslid:2096796-11669614\nhostname:aruba-258\nsiteRef:\n  kind: site\n  version: v1alpha\n  namespace: lla\n  name: dal3\nvendor:\n  name: aruba\n\nResource Relationships:\n- Has siteRef relationship with site_lla_dal3",
+      "metadata": {
+        "resource_type": "orchestrator",
+        "namespace": "258",
+        "name": "aruba-258",
+        "uri": "http://lla.com/ontology#orchestrator_258_aruba-258",
+        "timestamp": "2024-11-14T10:39:06.806493"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-wan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-wan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806497"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-wan1_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-wan1' in namespace '258' has a edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806505"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-wan1_vnf_258_dal3-paloalto",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-wan1' in namespace '258' has a vnfRef relationship with the vnf resource 'dal3-paloalto' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_dal3-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-paloalto"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_dal3-paloalto",
+        "timestamp": "2024-11-14T10:39:06.806508"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-wan1_ipamblock_258_dal3-paloalto-wan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-wan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'dal3-paloalto-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_dal3-paloalto-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_dal3-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.806512"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-wan1_vlan_258_dal3-paloalto-wan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-wan1' in namespace '258' has a vlanRef relationship with the vlan resource 'dal3-paloalto-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_dal3-paloalto-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-paloalto-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_dal3-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.806516"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-lan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-lan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806519"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-lan1_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-lan1' in namespace '258' has a edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806523"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-lan1_vnf_258_dal3-paloalto",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-lan1' in namespace '258' has a vnfRef relationship with the vnf resource 'dal3-paloalto' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_dal3-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-paloalto"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_dal3-paloalto",
+        "timestamp": "2024-11-14T10:39:06.806526"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-lan1_ipamblock_258_dal3-paloalto-lan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-lan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'dal3-paloalto-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_dal3-paloalto-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_dal3-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.806529"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-paloalto-lan1_vlan_258_dal3-paloalto-lan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-paloalto-lan1' in namespace '258' has a vlanRef relationship with the vlan resource 'dal3-paloalto-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_dal3-paloalto-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-paloalto-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_dal3-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.806532"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-wan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-wan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806538"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-wan1_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-wan1' in namespace '258' has a edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806543"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-wan1_vnf_258_dal3-aruba",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-wan1' in namespace '258' has a vnfRef relationship with the vnf resource 'dal3-aruba' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_dal3-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-aruba"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_dal3-aruba",
+        "timestamp": "2024-11-14T10:39:06.806551"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-wan1_ipamblock_258_dal3-aruba-wan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-wan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'dal3-aruba-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_dal3-aruba-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_dal3-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.806554"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-wan1_vlan_258_dal3-aruba-wan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-wan1' in namespace '258' has a vlanRef relationship with the vlan resource 'dal3-aruba-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_dal3-aruba-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-aruba-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_dal3-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.806558"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-lan1_site_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-lan1' in namespace '258' has a siteRef relationship with the site resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_dal3",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806561"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-lan1_edge_lla_dal3",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-lan1' in namespace '258' has a edgeRef relationship with the edge resource 'dal3' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_dal3",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "dal3"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_dal3",
+        "timestamp": "2024-11-14T10:39:06.806564"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-lan1_vnf_258_dal3-aruba",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-lan1' in namespace '258' has a vnfRef relationship with the vnf resource 'dal3-aruba' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_dal3-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "dal3-aruba"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_dal3-aruba",
+        "timestamp": "2024-11-14T10:39:06.806570"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-lan1_ipamblock_258_dal3-aruba-lan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-lan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'dal3-aruba-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_dal3-aruba-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_dal3-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806574"
+      }
+    },
+    {
+      "id": "rel_access_258_dal3-aruba-lan1_vlan_258_dal3-aruba-lan1",
+      "type": "relationship",
+      "content": "The access resource 'dal3-aruba-lan1' in namespace '258' has a vlanRef relationship with the vlan resource 'dal3-aruba-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_dal3-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_dal3-aruba-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "dal3-aruba-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_dal3-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_dal3-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806578"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-wan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-wan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806581"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-wan1_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-wan1' in namespace '258' has a edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806585"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-wan1_vnf_258_stk1-paloalto",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-wan1' in namespace '258' has a vnfRef relationship with the vnf resource 'stk1-paloalto' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_stk1-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-paloalto"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_stk1-paloalto",
+        "timestamp": "2024-11-14T10:39:06.806592"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-wan1_ipamblock_258_stk1-paloalto-wan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-wan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'stk1-paloalto-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_stk1-paloalto-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_stk1-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.806595"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-wan1_vlan_258_stk1-paloalto-wan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-wan1' in namespace '258' has a vlanRef relationship with the vlan resource 'stk1-paloalto-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_stk1-paloalto-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-paloalto-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-wan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_stk1-paloalto-wan1",
+        "timestamp": "2024-11-14T10:39:06.806599"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-lan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-lan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806602"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-lan1_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-lan1' in namespace '258' has a edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806607"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-lan1_vnf_258_stk1-paloalto",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-lan1' in namespace '258' has a vnfRef relationship with the vnf resource 'stk1-paloalto' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_stk1-paloalto",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-paloalto"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_stk1-paloalto",
+        "timestamp": "2024-11-14T10:39:06.806610"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-lan1_ipamblock_258_stk1-paloalto-lan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-lan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'stk1-paloalto-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_stk1-paloalto-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_stk1-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.806615"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-paloalto-lan1_vlan_258_stk1-paloalto-lan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-paloalto-lan1' in namespace '258' has a vlanRef relationship with the vlan resource 'stk1-paloalto-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-paloalto-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_stk1-paloalto-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-paloalto-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-paloalto-lan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_stk1-paloalto-lan1",
+        "timestamp": "2024-11-14T10:39:06.806620"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-wan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-wan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806623"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-wan1_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-wan1' in namespace '258' has a edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806627"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-wan1_vnf_258_stk1-aruba",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-wan1' in namespace '258' has a vnfRef relationship with the vnf resource 'stk1-aruba' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_stk1-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-aruba"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_stk1-aruba",
+        "timestamp": "2024-11-14T10:39:06.806657"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-wan1_ipamblock_258_stk1-aruba-wan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-wan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'stk1-aruba-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_stk1-aruba-wan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_stk1-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.806669"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-wan1_vlan_258_stk1-aruba-wan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-wan1' in namespace '258' has a vlanRef relationship with the vlan resource 'stk1-aruba-wan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-wan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_stk1-aruba-wan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-aruba-wan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-wan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_stk1-aruba-wan1",
+        "timestamp": "2024-11-14T10:39:06.806673"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-lan1_site_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-lan1' in namespace '258' has a siteRef relationship with the site resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "siteRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "site_lla_stk1",
+          "kind": "site",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#site_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806676"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-lan1_edge_lla_stk1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-lan1' in namespace '258' has a edgeRef relationship with the edge resource 'stk1' in namespace 'lla'.",
+      "metadata": {
+        "relationship_type": "edgeRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "edge_lla_stk1",
+          "kind": "edge",
+          "namespace": "lla",
+          "name": "stk1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#edge_lla_stk1",
+        "timestamp": "2024-11-14T10:39:06.806681"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-lan1_vnf_258_stk1-aruba",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-lan1' in namespace '258' has a vnfRef relationship with the vnf resource 'stk1-aruba' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vnfRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vnf_258_stk1-aruba",
+          "kind": "vnf",
+          "namespace": "258",
+          "name": "stk1-aruba"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#vnf_258_stk1-aruba",
+        "timestamp": "2024-11-14T10:39:06.806684"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-lan1_ipamblock_258_stk1-aruba-lan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-lan1' in namespace '258' has a ipamBlockRef relationship with the ipamblock resource 'stk1-aruba-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "ipamBlockRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "ipamblock_258_stk1-aruba-lan1",
+          "kind": "ipamblock",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#ipamblock_258_stk1-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806687"
+      }
+    },
+    {
+      "id": "rel_access_258_stk1-aruba-lan1_vlan_258_stk1-aruba-lan1",
+      "type": "relationship",
+      "content": "The access resource 'stk1-aruba-lan1' in namespace '258' has a vlanRef relationship with the vlan resource 'stk1-aruba-lan1' in namespace '258'.",
+      "metadata": {
+        "relationship_type": "vlanRef",
+        "source_resource": {
+          "resource_id": "access_258_stk1-aruba-lan1",
+          "kind": "access",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "target_resource": {
+          "resource_id": "vlan_258_stk1-aruba-lan1",
+          "kind": "vlan",
+          "namespace": "258",
+          "name": "stk1-aruba-lan1"
+        },
+        "source_uri": "http://lla.com/ontology#access_258_stk1-aruba-lan1",
+        "target_uri": "http://lla.com/ontology#vlan_258_stk1-aruba-lan1",
+        "timestamp": "2024-11-14T10:39:06.806691"
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "kind": "vnf",
+    "version": "v1alpha",
+    "namespace": "258",
+    "name": "dal3-paloalto",
+    "metadata": {
+      "dateCreated": 1731515940705,
+      "dateUpdated": 1731515941705,
+      "labels": {}
+    },
+    "spec": {
+      "type": "sse",
+      "slid": "2096796-11669615",
+      "speed": "25m",
+      "firewallRef": {
+        "kind": "firewall",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "gtwy-dal3-258"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "licenseRef": {
+        "kind": "license",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "dal3-paloalto"
+      },
+      "vendor": {
+        "name": "paloalto"
+      }
+    }
+  },
+  {
+    "kind": "vnf",
+    "version": "v1alpha",
+    "namespace": "258",
+    "name": "dal3-aruba",
+    "metadata": {
+      "dateCreated": 1731515940705,
+      "dateUpdated": 1731515941705,
+      "labels": {}
+    },
+    "spec": {
+      "type": "gateway",
+      "slid": "2096796-11669615",
+      "speed": "25m",
+      "sdwanRef": {
+        "kind": "sdwan",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "gtwy-dal3-258"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "dal3"
+      },
+      "licenseRef": {
+        "kind": "license",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "dal3-aruba"
+      },
+      "vendor": {
+        "name": "aruba"
+      }
+    }
+  },
+  {
+    "kind": "vnf",
+    "version": "v1alpha",
+    "namespace": "258",
+    "name": "stk1-paloalto",
+    "metadata": {
+      "dateCreated": 1731515940705,
+      "dateUpdated": 1731515941705,
+      "labels": {}
+    },
+    "spec": {
+      "type": "sse",
+      "slid": "2096796-11669615",
+      "speed": "25m",
+      "firewallRef": {
+        "kind": "firewall",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "gtwy-stk1-258"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "licenseRef": {
+        "kind": "license",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "stk1-paloalto"
+      },
+      "vendor": {
+        "name": "paloalto"
+      }
+    }
+  },
+  {
+    "kind": "vnf",
+    "version": "v1alpha",
+    "namespace": "258",
+    "name": "stk1-aruba",
+    "metadata": {
+      "dateCreated": 1731515940705,
+      "dateUpdated": 1731515941705,
+      "labels": {}
+    },
+    "spec": {
+      "type": "gateway",
+      "slid": "2096796-11669615",
+      "speed": "25m",
+      "sdwanRef": {
+        "kind": "sdwan",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "gtwy-stk1-258"
+      },
+      "edgeRef": {
+        "kind": "edge",
+        "version": "v1alpha",
+        "namespace": "lla",
+        "name": "stk1"
+      },
+      "licenseRef": {
+        "kind": "license",
+        "version": "v1alpha",
+        "namespace": "258",
+        "name": "stk1-aruba"
+      },
+      "vendor": {
+        "name": "aruba"
+      }
+    }
+  }
+]

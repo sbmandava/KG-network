@@ -1,0 +1,108 @@
+[
+  {
+    "kind": "site",
+    "version": "v1alpha",
+    "namespace": "lla",
+    "name": "dal3",
+    "metadata": {
+      "dateCreated": 1731515940705,
+      "dateUpdated": 1731515941705,
+      "labels": {
+        "network": "core",
+        "type": "vpop"
+      }
+    },
+    "spec": {
+      "address": {
+        "line1": "1950 N Stemmons Fwy",
+        "city": "Dallas",
+        "state": "Texas",
+        "zipcode": "75207",
+        "country": "USA",
+        "latitude": 32.80139,
+        "longitude": -96.819534,
+        "glid": "US8645R52J+F5FBS00",
+        "line2": null
+      },
+      "friendly": "DAL3 Network Function Virtualization Pod",
+      "vpop": {
+        "name": "dal3",
+        "routers": [
+          {
+            "router": "cr6-dal3",
+            "routerFqdn": "cr6-dal3.ip4.lla.net",
+            "primary": true,
+            "interface": "ae11",
+            "group": 192,
+            "inheritGroup": 193,
+            "inheritIntf": "ae11.10",
+            "asn": 3257
+          },
+          {
+            "router": "cr5-dal3",
+            "routerFqdn": "cr5-dal3.ip4.lla.net",
+            "primary": false,
+            "interface": "ae11",
+            "group": 192,
+            "inheritGroup": 193,
+            "inheritIntf": "ae11.10",
+            "asn": 3257
+          }
+        ]
+      }
+    }
+  },
+  {
+    "kind": "site",
+    "version": "v1alpha",
+    "namespace": "lla",
+    "name": "stk1",
+    "metadata": {
+      "dateCreated": 1731515940705,
+      "dateUpdated": 1731515941705,
+      "labels": {
+        "network": "core",
+        "type": "vpop"
+      }
+    },
+    "spec": {
+      "address": {
+        "line1": "11 Esbogatan",
+        "city": "Kista",
+        "state": "Stockholms l\u00e4n",
+        "zipcode": "164 74",
+        "country": "SE",
+        "latitude": 59.422306,
+        "longitude": 17.918524,
+        "glid": "SE9FFVCWC8+RJHBS00",
+        "line2": null
+      },
+      "friendly": "STK1 Network Function Virtualization Pod",
+      "vpop": {
+        "name": "stk1",
+        "routers": [
+          {
+            "router": "cr6-stk1",
+            "routerFqdn": "cr6-stk1.ip4.lla.net",
+            "primary": true,
+            "interface": "ae11",
+            "group": 192,
+            "inheritGroup": 193,
+            "inheritIntf": "ae11.10",
+            "asn": 3257
+          },
+          {
+            "router": "cr5-stk1",
+            "routerFqdn": "cr5-stk1.ip4.lla.net",
+            "primary": false,
+            "interface": "ae11",
+            "group": 192,
+            "inheritGroup": 193,
+            "inheritIntf": "ae11.10",
+            "asn": 3257
+          }
+        ]
+      }
+    }
+  }
+]
