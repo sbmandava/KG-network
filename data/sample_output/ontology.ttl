@@ -1,0 +1,159 @@
+@prefix lla: <http://lla.com/ontology#> .
+
+lla:account_213_213 a lla:account ;
+    lla:customerGroupRef lla:customergroup_cg-93_cg-93 .
+
+lla:orchestrator_213_aruba-213 a lla:orchestrator ;
+    lla:siteRef lla:site_lla_dal3 .
+
+lla:orchestrator_213_paloalto-213 a lla:orchestrator ;
+    lla:siteRef lla:site_lla_dal3 .
+
+lla:access_213_dal3-aruba-lan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_dal3 ;
+    lla:ipamBlockRef lla:ipamblock_213_dal3-aruba-lan1 ;
+    lla:siteRef lla:site_lla_dal3 ;
+    lla:vlanRef lla:vlan_213_dal3-aruba-lan1 ;
+    lla:vnfRef lla:vnf_213_dal3-aruba .
+
+lla:access_213_dal3-aruba-wan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_dal3 ;
+    lla:ipamBlockRef lla:ipamblock_213_dal3-aruba-wan1 ;
+    lla:siteRef lla:site_lla_dal3 ;
+    lla:vlanRef lla:vlan_213_dal3-aruba-wan1 ;
+    lla:vnfRef lla:vnf_213_dal3-aruba .
+
+lla:access_213_dal3-paloalto-lan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_dal3 ;
+    lla:ipamBlockRef lla:ipamblock_213_dal3-paloalto-lan1 ;
+    lla:siteRef lla:site_lla_dal3 ;
+    lla:vlanRef lla:vlan_213_dal3-paloalto-lan1 ;
+    lla:vnfRef lla:vnf_213_dal3-paloalto .
+
+lla:access_213_dal3-paloalto-wan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_dal3 ;
+    lla:ipamBlockRef lla:ipamblock_213_dal3-paloalto-wan1 ;
+    lla:siteRef lla:site_lla_dal3 ;
+    lla:vlanRef lla:vlan_213_dal3-paloalto-wan1 ;
+    lla:vnfRef lla:vnf_213_dal3-paloalto .
+
+lla:access_213_stk1-aruba-lan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_stk1 ;
+    lla:ipamBlockRef lla:ipamblock_213_stk1-aruba-lan1 ;
+    lla:siteRef lla:site_lla_stk1 ;
+    lla:vlanRef lla:vlan_213_stk1-aruba-lan1 ;
+    lla:vnfRef lla:vnf_213_stk1-aruba .
+
+lla:access_213_stk1-aruba-wan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_stk1 ;
+    lla:ipamBlockRef lla:ipamblock_213_stk1-aruba-wan1 ;
+    lla:siteRef lla:site_lla_stk1 ;
+    lla:vlanRef lla:vlan_213_stk1-aruba-wan1 ;
+    lla:vnfRef lla:vnf_213_stk1-aruba .
+
+lla:access_213_stk1-paloalto-lan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_stk1 ;
+    lla:ipamBlockRef lla:ipamblock_213_stk1-paloalto-lan1 ;
+    lla:siteRef lla:site_lla_stk1 ;
+    lla:vlanRef lla:vlan_213_stk1-paloalto-lan1 ;
+    lla:vnfRef lla:vnf_213_stk1-paloalto .
+
+lla:access_213_stk1-paloalto-wan1 a lla:access ;
+    lla:edgeRef lla:edge_lla_stk1 ;
+    lla:ipamBlockRef lla:ipamblock_213_stk1-paloalto-wan1 ;
+    lla:siteRef lla:site_lla_stk1 ;
+    lla:vlanRef lla:vlan_213_stk1-paloalto-wan1 ;
+    lla:vnfRef lla:vnf_213_stk1-paloalto .
+
+lla:customergroup_cg-93_cg-93 a lla:customergroup .
+
+lla:firewall_213_gtwy-dal3-213 a lla:firewall ;
+    lla:edgeSelector_edgeRef lla:edge_lla_dal3 .
+
+lla:firewall_213_gtwy-stk1-213 a lla:firewall ;
+    lla:edgeSelector_edgeRef lla:edge_lla_stk1 .
+
+lla:ipamblock_213_dal3-aruba-lan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_dal3 .
+
+lla:ipamblock_213_dal3-aruba-wan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_dal3 .
+
+lla:ipamblock_213_dal3-paloalto-lan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_dal3 .
+
+lla:ipamblock_213_dal3-paloalto-wan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_dal3 .
+
+lla:ipamblock_213_stk1-aruba-lan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_stk1 .
+
+lla:ipamblock_213_stk1-aruba-wan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_stk1 .
+
+lla:ipamblock_213_stk1-paloalto-lan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_stk1 .
+
+lla:ipamblock_213_stk1-paloalto-wan1 a lla:ipamblock ;
+    lla:siteRef lla:site_lla_stk1 .
+
+lla:sdwan_213_gtwy-dal3-213 a lla:sdwan ;
+    lla:edgeSelector_edgeRef lla:edge_lla_dal3 .
+
+lla:sdwan_213_gtwy-stk1-213 a lla:sdwan ;
+    lla:edgeSelector_edgeRef lla:edge_lla_stk1 .
+
+lla:vlan_213_dal3-aruba-lan1 a lla:vlan ;
+    lla:accessRef lla:access_213_dal3-aruba-lan1 .
+
+lla:vlan_213_dal3-aruba-wan1 a lla:vlan ;
+    lla:accessRef lla:access_213_dal3-aruba-wan1 .
+
+lla:vlan_213_dal3-paloalto-lan1 a lla:vlan ;
+    lla:accessRef lla:access_213_dal3-paloalto-lan1 .
+
+lla:vlan_213_dal3-paloalto-wan1 a lla:vlan ;
+    lla:accessRef lla:access_213_dal3-paloalto-wan1 .
+
+lla:vlan_213_stk1-aruba-lan1 a lla:vlan ;
+    lla:accessRef lla:access_213_stk1-aruba-lan1 .
+
+lla:vlan_213_stk1-aruba-wan1 a lla:vlan ;
+    lla:accessRef lla:access_213_stk1-aruba-wan1 .
+
+lla:vlan_213_stk1-paloalto-lan1 a lla:vlan ;
+    lla:accessRef lla:access_213_stk1-paloalto-lan1 .
+
+lla:vlan_213_stk1-paloalto-wan1 a lla:vlan ;
+    lla:accessRef lla:access_213_stk1-paloalto-wan1 .
+
+lla:vnf_213_dal3-aruba a lla:vnf ;
+    lla:edgeRef lla:edge_lla_dal3 ;
+    lla:licenseRef lla:license_213_dal3-aruba ;
+    lla:sdwanRef lla:sdwan_213_gtwy-dal3-213 .
+
+lla:vnf_213_dal3-paloalto a lla:vnf ;
+    lla:edgeRef lla:edge_lla_dal3 ;
+    lla:firewallRef lla:firewall_213_gtwy-dal3-213 ;
+    lla:licenseRef lla:license_213_dal3-paloalto .
+
+lla:vnf_213_stk1-aruba a lla:vnf ;
+    lla:edgeRef lla:edge_lla_stk1 ;
+    lla:licenseRef lla:license_213_stk1-aruba ;
+    lla:sdwanRef lla:sdwan_213_gtwy-stk1-213 .
+
+lla:vnf_213_stk1-paloalto a lla:vnf ;
+    lla:edgeRef lla:edge_lla_stk1 ;
+    lla:firewallRef lla:firewall_213_gtwy-stk1-213 ;
+    lla:licenseRef lla:license_213_stk1-paloalto .
+
+lla:edge_lla_dal3 a lla:edge ;
+    lla:siteRef lla:site_lla_dal3 .
+
+lla:edge_lla_stk1 a lla:edge ;
+    lla:siteRef lla:site_lla_stk1 .
+
+lla:site_lla_stk1 a lla:site .
+
+lla:site_lla_dal3 a lla:site .
+

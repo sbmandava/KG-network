@@ -5,8 +5,8 @@
     "namespace": "lla",
     "name": "dal3",
     "metadata": {
-      "dateCreated": 1731507002046,
-      "dateUpdated": 1731507003046,
+      "dateCreated": 1731507807579,
+      "dateUpdated": 1731507808579,
       "labels": {
         "network": "core",
         "type": "vpop"
@@ -58,8 +58,8 @@
     "namespace": "lla",
     "name": "stk1",
     "metadata": {
-      "dateCreated": 1731507002046,
-      "dateUpdated": 1731507003046,
+      "dateCreated": 1731507807579,
+      "dateUpdated": 1731507808579,
       "labels": {
         "network": "core",
         "type": "vpop"

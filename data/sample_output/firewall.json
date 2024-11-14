@@ -1,21 +1,21 @@
 [
   {
-    "kind": "sdwan",
+    "kind": "firewall",
     "version": "v1alpha",
-    "namespace": "261",
-    "name": "gtwy-dal3-261",
+    "namespace": "213",
+    "name": "gtwy-dal3-213",
     "metadata": {
-      "dateCreated": 1731482547398,
-      "dateUpdated": 1731482548398,
+      "dateCreated": 1731507807579,
+      "dateUpdated": 1731507808579,
       "labels": {
         "network": "coporate",
-        "type": "gateway"
+        "type": "sse"
       }
     },
     "spec": {
-      "type": "gateway",
+      "type": "sse",
       "slid": "2096796-11669615",
-      "size": "SP-50",
+      "size": "Palo-50_PREM-BASIC-YU",
       "speed": "25m",
       "edgeSelector": {
         "edgeRef": {
@@ -26,27 +26,27 @@
         }
       },
       "vendor": {
-        "name": "aruba"
+        "name": "paloalto"
       }
     }
   },
   {
-    "kind": "sdwan",
+    "kind": "firewall",
     "version": "v1alpha",
-    "namespace": "261",
-    "name": "gtwy-stk1-261",
+    "namespace": "213",
+    "name": "gtwy-stk1-213",
     "metadata": {
-      "dateCreated": 1731482547398,
-      "dateUpdated": 1731482548398,
+      "dateCreated": 1731507807579,
+      "dateUpdated": 1731507808579,
       "labels": {
         "network": "coporate",
-        "type": "gateway"
+        "type": "sse"
       }
     },
     "spec": {
-      "type": "gateway",
+      "type": "sse",
       "slid": "2096796-11669615",
-      "size": "SP-50",
+      "size": "Palo-50_PREM-BASIC-YU",
       "speed": "25m",
       "edgeSelector": {
         "edgeRef": {
@@ -57,7 +57,7 @@
         }
       },
       "vendor": {
-        "name": "aruba"
+        "name": "paloalto"
       }
     }
   }
